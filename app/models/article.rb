@@ -422,7 +422,7 @@ class Article < Content
       return false
     end
 
-    self.body = self.body + tomerge.body
+    self.body = self.body+tomerge.body
     self.comments << tomerge.comments
     self.save!
 
